@@ -1,0 +1,24 @@
+{
+  "transformOptions": {
+    "embedMetadata": [
+      { "value": { "name": "metadata" } }
+  	]
+  },
+  "transformers": [
+    {
+      "transformerName": "anonimizator",
+      "supportedSourceAndTargetList": [
+        {"sourceMediaType": "application/pdf", "targetMediaType": "application/pdf-anonimized"}
+      ],
+      "transformOptions": [
+      ]
+    },
+    {
+      "transformerName": "anonimizatorembedded",
+        "supportedSourceAndTargetList": [
+          {  "sourceMediaType": "application/pdf", "targetMediaType": "alfresco-metadata-embed" }
+	    ],
+	    "transformOptions": ["embedMetadata"]
+    }
+  ]
+}

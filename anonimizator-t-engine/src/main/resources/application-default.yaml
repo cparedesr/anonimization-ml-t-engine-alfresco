@@ -1,0 +1,6 @@
+queue:
+  engineRequestQueue: anonimizar-pdf-engine-queue
+
+transform:
+  core:
+    version: 5.1.4

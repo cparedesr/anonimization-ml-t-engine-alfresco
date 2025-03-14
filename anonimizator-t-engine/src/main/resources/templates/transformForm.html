@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div>
+		<h2>Transformar PDF a PDF anonimizado</h2>
+        <form action="/transform" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr><td><div>Archivo PDF:</div></td><td><input type="file" name="file" required /></td></tr>
+                <tr><td>sourceMimetype *</td><td><input type="text" name="sourceMimetype" value="application/pdf" required /></td></tr>
+                <tr><td>targetExtension *</td><td><input type="text" name="targetExtension" value="pdf" required /></td></tr>
+                <tr><td>timeout</td><td><input type="text" name="timeout" value="" /></td></tr>
+                <tr><td>testDelay</td><td><input type="text" name="testDelay" value="" /></td></tr>
+                <tr><td colspan="2"><input type="submit" value="Anonimizar Documento" /></td></tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        <a href="/log">Log entries</a>
+    </div>
+
+</body>
+</html>
